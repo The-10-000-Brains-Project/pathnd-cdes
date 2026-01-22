@@ -1,0 +1,121 @@
+================================================================================
+FINAL AUDIT SUMMARY - PRIORITIZED ISSUES
+================================================================================
+
+================================================================================
+HIGH PRIORITY - Should Fix Before Production
+================================================================================
+
+1. EXACT DUPLICATE FIELD NAME: 'hemisphere'
+------------------------------------------------------------
+   BDSA: Brain Hemisphere
+      Values: [left, right]
+   ASAP: Side of the brain hemisphere from which the biolog
+      Values: [Right, Left, Unknown]
+
+   RECOMMENDATION: Consolidate into single 'hemisphere' CDE or rename
+   to source-specific names (e.g., bdsa_hemisphere, asap_hemisphere)
+
+
+2. TDP43 FIELDS NEED CONSOLIDATION
+------------------------------------------------------------
+   - NPFTDTDP (NACC)
+   - path_frontotemporal_tdp43_pos (Path-ND)
+   - path_tdp43_LATE (Path-ND)
+   - FTD_TDP (Path-ND)
+   - FTD_TDP_subtype (Path-ND)
+
+   RECOMMENDATION: Consolidate TDP_43, tdp43, TDP43 into unified TDP43
+
+
+3. APOE GENOTYPE FIELDS NEED CONSOLIDATION
+------------------------------------------------------------
+   - APOE_Genotype (SEA-AD)
+   - APOE_e4_status (ASAP)
+   - NACC_APOE (PARTS)
+   - NACC_NACCAPOE (PARTS)
+   - NACCAPOE (PARTS)
+
+   RECOMMENDATION: Consolidate into single 'apoe_genotype' CDE
+
+
+4. FIELDS WITH SPECIAL CHARACTERS (PARENTHESES)
+------------------------------------------------------------
+   - 'Consensus_Clinical_Dx_(choice=Parkinsons_Cognitive_Impairment_no_dementia)'
+     → 'Consensus_Clinical_Dx'
+   - 'Consensus_Clinical_Dx_(choice=Other)'
+     → 'Consensus_Clinical_Dx'
+   - 'Total_Microinfarcts_(not_observed_grossly)'
+     → 'Total_Microinfarcts'
+
+   RECOMMENDATION: Remove parenthetical content from field names
+
+
+================================================================================
+MEDIUM PRIORITY - Should Address for Consistency
+================================================================================
+
+5. CAMELCASE FIELDS (84 total)
+------------------------------------------------------------
+   By source:
+   - BDR: 65 fields
+   - BDSA: 14 fields
+   - PARTS: 3 fields
+   - Answer ALS: 2 fields
+
+   RECOMMENDATION: Convert to snake_case for consistency
+   Example: CurrentCentre → current_centre
+
+
+6. PMI FIELD CONFUSION (postmortem interval vs microinfarcts)
+------------------------------------------------------------
+   - NPPMIH (NACC|Path-ND): Postmortem interval (hours)
+   - NPMICRO (NACC): Multiple microinfarcts present
+   - autpmi (Answer ALS): Post Mortem Interval (hours)
+   - publication_PMID (ASAP): PubMed unique identifier for journal art
+   - duration_pmi (ASAP): Post mortem interval (PMI) between death
+
+   RECOMMENDATION: Rename NPMICRO → microinfarcts_present (already NACC convention)
+   Keep NPPMIH as pmi_hours for postmortem interval
+
+
+7. EDUCATION FIELDS NEED CONSOLIDATION
+------------------------------------------------------------
+   - education_years (Path-ND): numeric
+   - Highest_level_of_education (SEA-AD): integer
+   - EDUC (BDSA): integer
+   - education_level (ASAP): enum
+
+   RECOMMENDATION: Consolidate into 'education_years' (numeric) and 
+   'education_level' (enum) pair
+
+
+================================================================================
+LOW PRIORITY - Nice to Have
+================================================================================
+
+8. BROKEN Related_CDEs REFERENCES: 581
+------------------------------------------------------------
+   Most are hippocampus-related path/stain links
+   RECOMMENDATION: Either add missing CDEs or clean up references
+
+
+9. ANSWER ALS RACE SPLIT INTO BINARY FIELDS
+------------------------------------------------------------
+   Fields: ['raceamin', 'raceasn']
+
+   RECOMMENDATION: These could map to unified 'race' enum, but works as-is
+
+
+================================================================================
+AUDIT STATISTICS
+================================================================================
+
+   Total CDEs: 1624
+   Sources: 10
+   Collections: 15
+   CamelCase fields: 84
+   Fields with special chars: 3
+   Exact duplicate names: 1 (hemisphere)
+   Broken Related_CDE refs: 581
+   Missing critical data: 0
