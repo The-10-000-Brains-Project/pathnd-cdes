@@ -17,10 +17,21 @@ from original source values to standardized values.
 ### NACC Fields (202 total)
 - `nacc_variable`: Original NACC field name (e.g., `NPSEX`)
 - `nacc_mapping`: Full transform with `to_standard`, `from_standard`, `sentinel_handling`
-- `Values`: Preserved original format showing both NACC codes and Path-ND text
+- `original_values`: Original NACC format (e.g., `NACC: 1=Male, 2=Female; Path-ND: [...]`)
+- `Values`: **Machine-parseable format** (v1.1.0+):
+  - Enum fields: JSON array of standardized values (e.g., `["male", "female", "intersex", "other"]`)
+  - Numeric ranges: JSON object (e.g., `{"type": "numeric_range", "min": 15, "max": 120, "sentinels": {...}}`)
+  - Free text: Cleaned description
 
 Example (sex field):
 ```json
+// Values (v1.1.0+):
+["male", "female", "intersex", "other"]
+
+// original_values:
+"NACC: 1=Male, 2=Female; Path-ND: [\"Male\",\"Female\",\"Intersex\",\"Other\",\"Not Reported\"]"
+
+// nacc_mapping:
 {
   "to_standard": {"1": "male", "2": "female", "Male": "male", "Female": "female", ...},
   "from_standard": {"male": "1", "female": "2", ...},
