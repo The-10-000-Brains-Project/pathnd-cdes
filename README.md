@@ -1,6 +1,6 @@
 # Path-ND Common Data Elements (CDEs)
 
-Standardized data element definitions for neurodegenerative disease research, harmonizing fields from NACC, Path-ND, ASAP, SEA-AD, BDR, BDSA, Answer ALS, and PARTS.
+Standardized data element definitions for neurodegenerative disease research, harmonizing fields from NACC, Path-ND, ASAP, SEA-AD, BDR, BDSA, Answer ALS, and PART data.
 
 **Current Version:** See `VERSION` file
 
