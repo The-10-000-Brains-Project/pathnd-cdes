@@ -3,11 +3,11 @@
 | | |
 |---|---|
 | Schema | `pathnd-schema` |
-| Version | 4.0.0 |
+| Version | 5.1.0 |
 | Published | 2026-10-14 |
-| Elements | 90 |
+| Elements | 92 |
 
-**Changes in this version:** Reference table 'diagnosis' updated to v4
+**Changes in this version:** Published snapshot
 
 ## Elements
 
@@ -103,8 +103,10 @@ Also available as [pathnd-schema.csv](pathnd-schema.csv). See the [changelog](CH
 | `uds_dementia_status` | Uniform Data Set dementia status code. | integer |  |  |  |  | clinical |  |
 | `vascular_pathology_severity` | Severity of parenchymal atherosclerosis. | enum |  |  | none \| mild \| moderate \| severe |  | pathology |  |
 | `genetics_dx` | Genetic component to diagnosis | enum | Yes |  | genetic \| sporadic \| unknown |  |  |  |
-| `prod_bucket` | Production Bucket Path for slides | string | No |  |  |  |  |  |
 | `staging_bucket` | Staging Bucket for slides upload | string | No |  |  |  |  |  |
+| `duration_of_dementia` | Dementia Durations in Years | float | No |  | 0-100 |  | clinical |  |
+| `disease_duration` | Disease duration | float | No |  | 0-100 |  | clinical |  |
+| `prod_bucket` | Production bucket | string | No |  |  |  |  |  |
 
 ## Value sets
 

@@ -2,6 +2,30 @@
 
 Rebuilt by Forge from the saved versions. Newest first.
 
+## v5.1.0 (2026-10-14)
+
+Version v5.0.0 → v5.1.0 (minor).
+
+**Summary:** Published snapshot
+
+- Added fields: `prod_bucket`
+
+## v5.0.0 (2026-10-14)
+
+Version v4.1.0 → v5.0.0 (major).
+
+**Summary:** Published snapshot
+
+- Removed fields: `prod_bucket`
+
+## v4.1.0 (2026-10-14)
+
+Version v4.0.0 → v4.1.0 (minor).
+
+**Summary:** Published snapshot
+
+- Added fields: `disease_duration`, `duration_of_dementia`
+
 ## v4.0.0 (2026-10-14)
 
 Version v3.0.0 → v4.0.0 (major).
