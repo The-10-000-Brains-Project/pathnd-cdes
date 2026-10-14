@@ -1,0 +1,75 @@
+code,category,diagnosis,diagnosis_type,protein_pathology
+LBD_NOS,Synucleinopathies,Lewy Body Disease NOS,neuropathological|clinical,Alpha-Synuclein
+PD,Synucleinopathies,Parkinson's Disease,clinical,Alpha-Synuclein
+PDD,Synucleinopathies,Parkinson's Disease with Dementia,clinical,Alpha-Synuclein
+DLB,Synucleinopathies,Dementia with Lewy Bodies,clinical,Alpha-Synuclein
+MSA_SND_OPCA,Synucleinopathies,Multiple System Atrophy (SND > OPCA),neuropathological,Alpha-Synuclein
+MSA_OPCA_SND,Synucleinopathies,Multiple System Atrophy (OPCA > SND),neuropathological,Alpha-Synuclein
+MSA_SND_OPCA_EQ,Synucleinopathies,Multiple System Atrophy (SND = OPCA),neuropathological,Alpha-Synuclein
+MSA_NOS,Synucleinopathies,Multiple System Atrophy NOS,neuropathological|clinical,Alpha-Synuclein
+MSA_MC,Synucleinopathies,Multiple System Atrophy – Minimal Change,neuropathological,Alpha-Synuclein
+MSA_FTLD,Synucleinopathies,Multiple System Atrophy (FTLD),neuropathological,Alpha-Synuclein
+MSA_P,Movement Disorders,Multiple System Atrophy Parkinsonian,clinical,Alpha-Synuclein
+MSA_C,Movement Disorders,Multiple System Atrophy Cerebellar,clinical,Alpha-Synuclein
+PSP,Tauopathies,Progressive Supranuclear Palsy,neuropathological|clinical,Tau
+CBD,Tauopathies,Corticobasal Degeneration,neuropathological|clinical,Tau
+GGT,Tauopathies,Globular Glial Tauopathy,neuropathological|clinical,Tau
+CTE,Tauopathies,Chronic Traumatic Encephalopathy,neuropathological|clinical,Tau
+FTD,Dementia,Frontotemporal Dementia,clinical,Variable
+AD,Dementia,Alzheimer's Disease,clinical,Variable
+CBS,Movement Disorders,Corticobasal Syndrome,clinical,Variable
+FTLD_TAU_PICKS,Tauopathies,FTLD Tau (Pick's Disease),neuropathological|clinical,Tau
+FTLD_TAU_MAPT,Tauopathies,FTLD Tau (MAPT),neuropathological|clinical,Tau
+FTLD_TAU_AGD,Tauopathies,FTLD Tau (Argyrophilic Grain Disease),neuropathological,Tau
+FTLD_TDP43_A,FTLD-TDP43,FTLD TDP43 Type A,neuropathological,TDP-43
+FTLD_TDP43_B,FTLD-TDP43,FTLD TDP43 Type B,neuropathological,TDP-43
+FTLD_TDP43_C,FTLD-TDP43,FTLD TDP43 Type C,neuropathological,TDP-43
+FTLD_TDP43_D,FTLD-TDP43,FTLD TDP43 Type D,neuropathological,TDP-43
+FTLD_TDP43_E,FTLD-TDP43,FTLD TDP43 Type E,neuropathological,TDP-43
+FTLD_MND_TDP43,FTLD-TDP43,FTLD-MND (TDP43),neuropathological,TDP-43
+MND_ALS_TDP43,FTLD-TDP43,Motor Neurone Disease / ALS (TDP43),neuropathological,TDP-43
+AD_HIGH,Alzheimer's Disease,Alzheimer's Disease – High-Level Neuropathological Change,neuropathological,Amyloid-beta / Tau
+AD_INT,Alzheimer's Disease,Alzheimer's Disease – Intermediate-Level Neuropathological Change,neuropathological,Amyloid-beta / Tau
+AD_LOW,Alzheimer's Disease,Alzheimer's Disease – Low-Level Neuropathological Change,neuropathological,Amyloid-beta / Tau
+HD,Movement Disorders,Huntington's Disease,neuropathological|clinical,Huntingtin
+SCA_NOS,Movement Disorders,Spinocerebellar Ataxia NOS,clinical,Variable
+ET,Movement Disorders,Essential Tremor,clinical,None Established
+DYS,Movement Disorders,Dystonia,clinical,None Established
+WD,Movement Disorders,Wilson's Disease,clinical,Copper
+CHORA,Movement Disorders,Chorea,clinical,Variable
+ATAX,Movement Disorders,Ataxia,clinical,Variable
+FRDA,Movement Disorders,Friedreich's Ataxia,clinical,Frataxin
+RLS,Movement Disorders,Restless Legs Syndrome,clinical,None Established
+PLMD,Movement Disorders,Periodic Limb Movement Disorder,clinical,None Established
+TS,Movement Disorders,Tourette Syndrome,clinical,None Established
+TIC,Movement Disorders,Tic Disorders,clinical,None Established
+MYO,Movement Disorders,Myoclonus,clinical,Variable
+TD,Movement Disorders,Tardive Dyskinesia,clinical,None Established
+DIP,Movement Disorders,Drug-Induced Parkinsonism,clinical,None Established
+VP,Movement Disorders,Vascular Parkinsonism,clinical,Variable
+NPH,Movement Disorders,Normal Pressure Hydrocephalus,clinical,None Established
+CP,Movement Disorders,Cerebral Palsy,neuropathological|clinical,None Established
+DS,Other,Down Syndrome,clinical,Variable
+PRION_NOS,Prion,Prion Disease NOS,neuropathological,Prion
+CTRL,Controls,control,clinical,variable
+LATE,TDP43-proteinopathy,Limbic-Predominant Age-Related TDP43 Proteinopathy (LATE),neuropathological,TDP-43
+AGD,Tauopathies,Argyrophilic Grain Disease,neuropathological,Tau
+PART,Tauopathies,Primary Age-Related Tauopathy (PART),neuropathological,Tau
+ARTAG,Tauopathies,Ageing-Related Tau Astrogliopathy (ARTAG),neuropathological,Tau
+CVD_ATHERO,Vascular,Cerebrovascular Disease (Atherosclerosis),neuropathological,
+CVD_HYALINE,Vascular,Cerebrovascular Disease (Hyaline Arteriolosclerosis),neuropathological,
+CVD_CAA,Vascular,Cerebrovascular Disease (Cerebral Amyloid Angiopathy),neuropathological,Amyloid-β
+NO_PATH,Other,No Misfolded Protein / Significant Vascular Pathology,clinical,
+OTHER_ND,Other,Other Neurological Disorder,Clinical,Variable
+PKM,Movement Disorders,Parkinsonism,clinical,Variable
+APKM,Movement Disorders,Atypical Parkinsonism,clinical,Variable
+PAF,Movement Disorders,Pure Autonomic Failure,clinical,Variable
+FXT,Movement Disorders,Fragile X Tremor Ataxia Syndrome,clinical,Variable
+DEM_NOS,Movement Disorders,Dementia NOS,clinical,Variable
+BvFTD,Dementia,Behaviour variant FTD,clinical,Variable
+PPA,Dementia,Primary Progressive Aphasia,clinical,Variable
+PCA,Dementia,Posterior Cortical Atrophy,clinical,Variable
+FTLD_FUS,FTLD-FUS,FTLD FUS,neuropathological,FUS
+FTLD_U,FTLD-U,FTLD U,neuropathological,Unspecified
+MND,Movement Disorders,Motor Neurone Disease,clinical,Variable
+FTD_MND,Movement Disorders/Dementia,FTD MND,clinical,Variable
