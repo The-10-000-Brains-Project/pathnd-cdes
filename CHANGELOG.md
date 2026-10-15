@@ -2,6 +2,15 @@
 
 Rebuilt by Forge from the saved versions. Newest first.
 
+## v5.1.1 (2026-10-15)
+
+Version v5.1.0 → v5.1.1 (patch).
+
+**Summary:** Published snapshot
+
+- `primary_dx`: allowed values added `FTD_MND`, `FTLD_FUS`, `FTLD_U`, `MND`; removed `PDD_GEN`, `PD_GEN`
+- `slice_hemisphere`: required Yes → No
+
 ## v5.1.0 (2026-10-14)
 
 Version v5.0.0 → v5.1.0 (minor).

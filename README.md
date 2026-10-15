@@ -3,8 +3,8 @@
 | | |
 |---|---|
 | Schema | `pathnd-schema` |
-| Version | 5.1.0 |
-| Published | 2026-10-14 |
+| Version | 5.1.1 |
+| Published | 2026-10-15 |
 | Elements | 92 |
 
 **Changes in this version:** Published snapshot
@@ -86,7 +86,7 @@ Also available as [pathnd-schema.csv](pathnd-schema.csv). See the [changelog](CH
 | `path_thal` | Thal phase amyloid-beta distribution stage. | float |  |  |  |  | Pathology |  |
 | `path_usslbd` | Unified Staging System for Lewy Body Diseases stage. | enum |  |  | olfactory_bulb_only \| brainstem_predominant \| limbic_predominant \| brainstem_limbic \| neocortical |  | Pathology |  |
 | `postmortem_interval_hours` | Time elapsed between death and tissue processing in hours. | float |  |  | 0-150 |  | pathology |  |
-| `primary_dx` | Primary neurodegenerative diagnosis based on clinical assessment. | enum | No |  | LBD_NOS \| PD \| PDD \| DLB \| MSA_SND_OPCA \| MSA_OPCA_SND \| MSA_SND_OPCA_EQ \| MSA_NOS \| MSA_MC \| MSA_FTLD \| MSA_P \| MSA_C \| PSP \| CBD \| GGT \| CTE \| FTD \| AD \| CBS \| FTLD_TAU_PICKS \| FTLD_TAU_MAPT \| FTLD_TAU_AGD \| FTLD_TDP43_A \| FTLD_TDP43_B \| FTLD_TDP43_C \| FTLD_TDP43_D \| FTLD_TDP43_E \| FTLD_MND_TDP43 \| MND_ALS_TDP43 \| AD_HIGH \| AD_INT \| AD_LOW \| HD \| SCA_NOS \| ET \| DYS \| WD \| CHORA \| ATAX \| FRDA \| RLS \| PLMD \| TS \| TIC \| MYO \| TD \| DIP \| VP \| NPH \| CP \| DS \| PRION_NOS \| CTRL \| LATE \| AGD \| PART \| ARTAG \| CVD_ATHERO \| CVD_HYALINE \| CVD_CAA \| NO_PATH \| OTHER_ND \| PKM \| APKM \| PAF \| FXT \| DEM_NOS \| PD_GEN \| PDD_GEN \| BvFTD \| PPA \| PCA | [diagnosis](value_sets/diagnosis.csv) | diagnosis |  |
+| `primary_dx` | Primary neurodegenerative diagnosis based on clinical assessment. | enum | No |  | LBD_NOS \| PD \| PDD \| DLB \| MSA_SND_OPCA \| MSA_OPCA_SND \| MSA_SND_OPCA_EQ \| MSA_NOS \| MSA_MC \| MSA_FTLD \| MSA_P \| MSA_C \| PSP \| CBD \| GGT \| CTE \| FTD \| AD \| CBS \| FTLD_TAU_PICKS \| FTLD_TAU_MAPT \| FTLD_TAU_AGD \| FTLD_TDP43_A \| FTLD_TDP43_B \| FTLD_TDP43_C \| FTLD_TDP43_D \| FTLD_TDP43_E \| FTLD_MND_TDP43 \| MND_ALS_TDP43 \| AD_HIGH \| AD_INT \| AD_LOW \| HD \| SCA_NOS \| ET \| DYS \| WD \| CHORA \| ATAX \| FRDA \| RLS \| PLMD \| TS \| TIC \| MYO \| TD \| DIP \| VP \| NPH \| CP \| DS \| PRION_NOS \| CTRL \| LATE \| AGD \| PART \| ARTAG \| CVD_ATHERO \| CVD_HYALINE \| CVD_CAA \| NO_PATH \| OTHER_ND \| PKM \| APKM \| PAF \| FXT \| DEM_NOS \| BvFTD \| PPA \| PCA \| FTLD_FUS \| FTLD_U \| MND \| FTD_MND | [diagnosis](value_sets/diagnosis.csv) | diagnosis |  |
 | `race` | Race category. | enum |  |  | american_indian_or_alaska_native \| asian \| white \| black_or_african_american \| multi_racial \| native_hawaiian_or_other_pacific_islander \| other \| not_reported |  | demographics |  |
 | `scanner_manufacturer` | Manufacturer of the whole slide scanner used for imaging. | string |  |  |  |  | equipment |  |
 | `scanner_model` | Model of the whole slide scanner used for imaging. | string |  |  |  |  | equipment |  |
@@ -94,7 +94,7 @@ Also available as [pathnd-schema.csv](pathnd-schema.csv). See the [changelog](CH
 | `seizures` | Whether seizures were present as an early symptom. | enum |  |  | Yes \| No \| Unknown |  | clinical |  |
 | `sex` | Sex assigned at birth | enum |  |  | male \| female \| intersex \| other |  | demographics |  |
 | `sibling_diagnosis` | Sibling dementia diagnosis or condition. | string |  |  |  |  | clinical |  |
-| `slice_hemisphere` | Brain hemisphere of the tissue slice. | enum | Yes |  | left \| right |  | screening |  |
+| `slice_hemisphere` | Brain hemisphere of the tissue slice. | enum | No |  | left \| right |  | screening |  |
 | `slice_orientation` | Anatomical orientation of the tissue slice. | enum |  |  | axial \| coronal \| sagittal |  | screening |  |
 | `slice_thickness` | Thickness of the tissue slice in micrometers. | float |  |  |  |  | pathology |  |
 | `slide_paths` | File system paths or references to digital slide images | string | Yes |  |  |  |  |  |
