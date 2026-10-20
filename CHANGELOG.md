@@ -72,11 +72,11 @@ Version v2.0.0 → v2.0.1 (patch).
 **Summary:** Pre-publish snapshot
 
 - `age`: required No → Yes
-- `age_at_death`: required unset → Yes
-- `autopsy_dx`: required unset → Yes
+- `age_at_death`: required No → Yes
+- `autopsy_dx`: required No → Yes
 - `brain_region`: required No → Yes
-- `institution`: required unset → Yes
-- `slice_hemisphere`: required unset → Yes
+- `institution`: required No → Yes
+- `slice_hemisphere`: required No → Yes
 
 ## v2.0.0 (2026-10-12)
 
